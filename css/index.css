@@ -1,23 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 header {
   display: flex;
-  background-size: cover;
+  background: url(assets/city-scape.png) no-repeat top center;
+  background-size: 100%;
+  height: 800px;
   flex-direction: column;
   align-items: center;
 }
 
 header .logo {
-  max-width: 100px;
+  width: 100%;
+  max-width: 140px;
 }
 
 .container {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -34,18 +39,95 @@ nav a {
   text-decoration: none;
 }
 
-nav.right a {
-  margin-right: 15px;
+nav .right a {
+  margin-right: 1em;
 }
 
-nav.right a:last-of-type {
+nav .right a:last-of-type {
   margin-right: 0;
 }
 
 .subnav {
   display: flex;
+  padding: 0.5em 1em;
+  width: 100%;
+  justify-content: space-between;
 }
 
-input[name="search"] {
-  opacity: 0.8;
+.search {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.search input {
+  display: flex;
+  flex-basis: 92%;
+  height: 50px;
+  padding: 1em;
+  background: none;
+  border: 1px solid rgba(155, 155, 155, 0.5);
+  color: #fff;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: 1px solid rgba(155, 155, 155, 0.5);
+}
+
+.search button {
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(155, 155, 155, 0.5);
+  border-left: none;
+  background: none;
+  cursor: pointer;
+}
+
+.login {
+  display: inline-block;
+  margin: 0.6em 0;
+  color: #fff;
+}
+
+.login a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login img {
+  vertical-align: middle;
+  width: 30px;
+}
+
+#about {
+  width: 68%;
+  color: #fff;
+  margin: 3em 0;
+}
+
+#about h2 {
+  font-weight: 300;
+  font-size: 3.5em;
+  margin-bottom: 1em;
+}
+
+#about p {
+  font-size: 1.3em;
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+}
+
+.orange {
+  background: orange;
 }
