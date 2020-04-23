@@ -126,6 +126,27 @@ nav .right a:last-of-type {
   font-size: 1.3em;
   border-radius: 50px;
   padding: 0.5em 1em;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  animation-play-state: paused;
+  background: #77d0ee;
+  color: black;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
 }
 
 .orange {
